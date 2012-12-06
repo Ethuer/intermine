@@ -119,6 +119,7 @@ public class G2cGenesConverter extends BioFileConverter
             mouse.setAttribute("dob", dob);
             mouse.setAttribute("genotype", genotype);
             mouse.setAttribute("sex", sex);
+            mouse.setAttribute("identifier", mouseIdentifier);
             mouse.setReference("strain", strain);
             store(mouse);
             refId = mouse.getIdentifier();
