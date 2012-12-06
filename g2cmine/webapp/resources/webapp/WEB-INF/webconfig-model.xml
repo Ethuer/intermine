@@ -1,4 +1,12 @@
 <webconfig>
+<class className="org.intermine.model.bio.Allele" label="Strain">
+    <fields>
+      <fieldconfig fieldExpr="primaryIdentifier"/>
+      <fieldconfig fieldExpr="symbol"/>
+      <fieldconfig fieldExpr="organism.name" label="Organism"/>
+    </fields>
+</class>
+
   <class className="org.intermine.model.bio.Author">
     <fields>
       <fieldconfig fieldExpr="name"/>
