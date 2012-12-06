@@ -10,12 +10,13 @@ package org.intermine.bio.dataconversion;
  *
  */
 
+
 import java.io.Reader;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.apache.tools.ant.BuildException;
+import org.apache.log4j.Logger;
 import org.intermine.dataconversion.ItemWriter;
 import org.intermine.metadata.Model;
 import org.intermine.objectstore.ObjectStoreException;
@@ -32,6 +33,7 @@ public class G2cGenesConverter extends BioFileConverter
     private static final String DATASET_TITLE = "G2C data set";
     private static final String DATA_SOURCE_NAME = "G2C";
     private static final String TAXON_ID = "10090";
+    private static final Logger LOG = Logger.getLogger(G2cGenesConverter.class);
     
     private Map<String, String> mouses = new HashMap<String, String>();
     private Map<String, String> strains = new HashMap<String, String>();
@@ -78,8 +80,8 @@ public class G2cGenesConverter extends BioFileConverter
 
             String[] bits = lineIter.next();
             if (bits.length < 30) {
-                throw new BuildException("wrong line length, expected 32 columns, was " 
-                        + bits.length);
+                LOG.warn("wrong line length, expected 32 columns, was " + bits.length);
+                continue;
             }
                         
             String doc = bits[1];
@@ -131,11 +133,10 @@ public class G2cGenesConverter extends BioFileConverter
         if (refId == null) {
             Item strain = createItem("Allele");
             strain.setAttribute("primaryIdentifier", strainIdentifier);
-            strain.setAttribute("symbol", strainIdentifier);
-            strain.setAttribute("name", strainName);
+            strain.setAttribute("symbol", strainName);
             strain.setReference("backgroundStrain", getBackgroundStrain(backgroundStrain));
             strain.setReference("organism", getOrganism(TAXON_ID));
-            strain.setReference("gene", getGene(strainIdentifier));
+            strain.setReference("gene", getGene(strainName));
             store(strain);
             refId = strain.getIdentifier();
             strains.put(strainIdentifier, refId);

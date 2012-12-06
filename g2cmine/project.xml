@@ -5,15 +5,16 @@
   <property name="intermine.properties.file" value="g2cmine.properties"/>
   <property name="default.intermine.properties.file" location="../default.intermine.integrate.properties"/>
   <sources>
-
-
-
+    <source name="g2cGenes" type="g2cGenes">
+      <property name="src.data.dir" location="/micklem/data/g2c"/>
+    </source>
+    <source name="entrez-organism" type="entrez-organism">
+      <property name="src.data.file" location="build/organisms.xml"/>
+    </source>
   </sources>
 
   <post-processing>
-
-
-
+    <!-- nothing yet -->
   </post-processing>
 
 </project>

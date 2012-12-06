@@ -4,3 +4,5 @@ gene
 sequence_collection
 sequence_feature
 sequence_variant
+transcript
+exon
