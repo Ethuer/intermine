@@ -56,7 +56,7 @@
     <merge-additions file="bio/sources/homologene/homologene_additions.xml"/>
     <merge-additions file="bio/sources/orthodb/orthodb_additions.xml"/>
     <merge-additions file="bio/sources/human/ncbi-gene/ncbi-gene_additions.xml"/>     
-    <merge-additions file="bio/sources/g2c/g2c_additions.xml"/> 
+    <merge-additions file="bio/sources/g2cGenes/g2cGenes_additions.xml"/> 
   </target>
 
 </project>

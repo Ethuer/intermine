@@ -7,8 +7,8 @@
     <attribute name="dob" type="java.lang.String"/>
     <attribute name="doc" type="java.lang.String"/>
     <attribute name="genotype" type="java.lang.String"/>
-    <reference name="strain" referenced-type="Allele" reverse-reference="subjects"/>
-    <collection name="behaviours" referenced-type="Behaviour" reverse-reference="subjects"/>
+    <reference name="strain" referenced-type="Allele"/>
+    <collection name="behaviours" referenced-type="Behaviour"/>
   </class>
   <class name="Behaviour" is-interface="true">
     <attribute name="name" type="java.lang.String"/>
@@ -17,9 +17,10 @@
     <reference name="subject" referenced-type="Subject" reverse-reference="behaviours"/>
   </class>
   <class name="Allele" is-interface="true">
+    <reference name="strain" referenced-type="Allele" reverse-reference="backgroundStrain"/>
     <reference name="backgroundStrain" referenced-type="Allele" reverse-reference="strain"/>
     <reference name="gene" referenced-type="Gene" reverse-reference="alleles"/>
-    <collection name="behaviours" referenced-type="Behaviour" reverse-reference="strains"/>
+    <collection name="behaviours" referenced-type="Behaviour" reverse-reference="strain"/>
   </class>
   <class name="Gene" is-interface="true">
     <collection name="alleles" referenced-type="Allele" reverse-reference="gene"/>

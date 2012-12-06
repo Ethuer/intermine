@@ -129,10 +129,10 @@ public class G2cGenesConverter extends BioFileConverter
             throws ObjectStoreException {
         String refId = strains.get(strainIdentifier);
         if (refId == null) {
-            Item strain = createItem("Subject");
+            Item strain = createItem("Allele");
             strain.setAttribute("primaryIdentifier", strainIdentifier);
             strain.setAttribute("symbol", strainIdentifier);
-            strain.setAttribute("strainName", strainName);
+            strain.setAttribute("name", strainName);
             strain.setReference("backgroundStrain", getBackgroundStrain(backgroundStrain));
             strain.setReference("organism", getOrganism(TAXON_ID));
             strain.setReference("gene", getGene(strainIdentifier));

@@ -1,114 +1,1042 @@
 <items>
-<item id="0_1" class="Ontology">
-<attribute name="name" value="Sequence Ontology"/>
-<attribute name="url" value="http://www.sequenceontology.org"/>
+<item id="8_136" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="1433.04"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
 </item>
-<item id="3_2" class="Gene">
-<attribute name="primaryIdentifier" value="HumanGene1"/>
-<reference name="organism" ref_id="4_2"/>
-<reference name="sequenceOntologyTerm" ref_id="5_1"/>
-<collection name="dataSets"><reference ref_id="2_1"/></collection>
+<item id="8_93" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="39"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_109" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="52.4"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_21" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="2887.32"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_97" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="25.8"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="7_9" class="Subject">
+<attribute name="dob" value="2006-06-20"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="+/+"/>
+<attribute name="sex" value="F"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_101" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="38.39"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_131" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="54.46"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_104" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="74.1"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_58" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="68.35"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_16" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="1377.57"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_10" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="RR_memory"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_74" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="28.57"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_67" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="58.4"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_52" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="29.6"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
 </item>
 <item id="4_1" class="Organism">
-<attribute name="taxonId" value="7227"/>
+<attribute name="taxonId" value="10090"/>
 </item>
-<item id="3_3" class="Gene">
-<attribute name="primaryIdentifier" value="HumanGene2"/>
-<reference name="organism" ref_id="4_2"/>
-<reference name="sequenceOntologyTerm" ref_id="5_1"/>
-<collection name="dataSets"><reference ref_id="2_1"/></collection>
+<item id="8_73" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="22.04"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
 </item>
-<item id="4_2" class="Organism">
-<attribute name="taxonId" value="9606"/>
+<item id="8_134" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="1.4210854715202e-14"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
 </item>
-<item id="6_2" class="Homologue">
-
-  <attribute name="bootstrapScore" value="100"/>
-
-  <attribute name="type" value="orthologue"/>
-
-  <reference name="gene" ref_id="3_2"/>
-
-  <reference name="homologue" ref_id="3_1"/>
-
-  <collection name="dataSets">
-    <reference ref_id="2_1"/>
-  </collection>
-
-  <collection name="evidence">
-    <reference ref_id="8_1"/>
-  </collection>
-
+<item id="8_8" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="RR_naive"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
 </item>
-, <item id="6_3" class="Homologue">
-
-  <attribute name="bootstrapScore" value="100"/>
-
-  <attribute name="type" value="orthologue"/>
-
-  <reference name="gene" ref_id="3_1"/>
-
-  <reference name="homologue" ref_id="3_3"/>
-
-  <collection name="dataSets">
-    <reference ref_id="2_1"/>
-  </collection>
-
-  <collection name="evidence">
-    <reference ref_id="8_1"/>
-  </collection>
-
+<item id="8_148" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="71.24"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
 </item>
-, <item id="6_4" class="Homologue">
-
-  <attribute name="bootstrapScore" value="100"/>
-
-  <attribute name="type" value="orthologue"/>
-
-  <reference name="gene" ref_id="3_3"/>
-
-  <reference name="homologue" ref_id="3_1"/>
-
-  <collection name="dataSets">
-    <reference ref_id="2_1"/>
-  </collection>
-
-  <collection name="evidence">
-    <reference ref_id="8_1"/>
-  </collection>
-
+<item id="8_135" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="53.9975"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
 </item>
-<item id="1_1" class="DataSource">
-<attribute name="name" value="TreeFam"/>
+<item id="8_81" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="2175.92"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
 </item>
-<item id="2_1" class="DataSet">
-<attribute name="name" value="TreeFam data set"/>
-<reference name="dataSource" ref_id="1_1"/>
+<item id="8_60" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="-31.11"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
 </item>
-<item id="6_1" class="Homologue">
-<attribute name="bootstrapScore" value="100"/>
-<attribute name="type" value="orthologue"/>
-<reference name="gene" ref_id="3_1"/>
-<reference name="homologue" ref_id="3_2"/>
-<collection name="dataSets"><reference ref_id="2_1"/></collection>
-<collection name="evidence"><reference ref_id="8_1"/></collection>
+<item id="8_12" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="FC_AQ_trial.tone"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
 </item>
-<item id="3_1" class="Gene">
-<attribute name="primaryIdentifier" value="FBgn001"/>
+<item id="8_2" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="EPM_5_dist_max"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_23" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="33.105"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_42" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="4.53"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_138" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="25"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_24" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="8.91428571428572"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="7_8" class="Subject">
+<attribute name="dob" value="2006-06-05"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="+/+"/>
+<attribute name="sex" value="M"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_92" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="6.52"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_137" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="6.09"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_114" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="-0.00738095238095"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_118" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="31.005"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="3_2" class="Allele">
+<attribute name="primaryIdentifier" value="bg_strain"/>
+<attribute name="symbol" value="bg_strain"/>
 <reference name="organism" ref_id="4_1"/>
 <reference name="sequenceOntologyTerm" ref_id="5_1"/>
 <collection name="dataSets"><reference ref_id="2_1"/></collection>
 </item>
+<item id="8_91" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="1191.27"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_139" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="90.8"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_107" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="5"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_84" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="13.0252380952381"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_70" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="-16.3541666666667"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="6_1" class="Gene">
+<attribute name="symbol" value="g2c_mid"/>
+<reference name="organism" ref_id="4_1"/>
+<reference name="sequenceOntologyTerm" ref_id="5_2"/>
+<collection name="dataSets"><reference ref_id="2_1"/></collection>
+</item>
+<item id="3_1" class="Allele">
+<attribute name="name" value="strain"/>
+<attribute name="primaryIdentifier" value="g2c_mid"/>
+<attribute name="symbol" value="g2c_mid"/>
+<reference name="backgroundStrain" ref_id="3_2"/>
+<reference name="gene" ref_id="6_1"/>
+<reference name="organism" ref_id="4_1"/>
+<reference name="sequenceOntologyTerm" ref_id="5_1"/>
+<collection name="dataSets"><reference ref_id="2_1"/></collection>
+</item>
+<item id="8_76" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="1637.55"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_140" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="6.56"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_64" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="12.8"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_87" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="31"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_22" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="41.2"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_26" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="66.07"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_14" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="FC_CT_session.bin"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_79" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="101.4"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_45" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="27.0725"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_132" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="-19.22"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_123" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="19"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_66" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="2177.02"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_71" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="41.96"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_133" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="59.7275"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_121" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="1264.11"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_128" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="41.8858333333333"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_85" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="-56.095"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_51" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="2623.65"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_78" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="28"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_98" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="64.8991666666666"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_11" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="FC_AQ_trial"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_126" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="2270.11"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_44" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="-25"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="7_3" class="Subject">
+<attribute name="dob" value="2006-06-05"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="-/-"/>
+<attribute name="sex" value="M"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_33" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="9"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_20" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="7.64"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_18" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="19"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_75" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="32.3175"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="7_6" class="Subject">
+<attribute name="dob" value="2006-10-02"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="+/+"/>
+<attribute name="sex" value="F"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_29" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="0.9"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_83" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="11.5816666666667"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_124" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="77.4"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="7_7" class="Subject">
+<attribute name="dob" value="2006-07-21"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="+/+"/>
+<attribute name="sex" value="M"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_6" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="NOE_5_dist_total"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_50" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="8.3"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_144" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="-0.06630952380952"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_150" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="-31.9575"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_95" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="8.35"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_39" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="4.5527380952381"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_142" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="-8"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_94" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="39.4"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_13" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="FC_CT_session"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_43" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="70.3575"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_56" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="53.57"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_28" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="83.1125"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_149" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="-41.07"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_3" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="EPM_5_percent_time_in_open"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_55" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="8.82416666666665"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="7_5" class="Subject">
+<attribute name="dob" value="2006-07-14"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="-/-"/>
+<attribute name="sex" value="M"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_48" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="18"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_65" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="8.32"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_5" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="OF_5_dist_max"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_111" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="1793.2"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_116" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="32.14"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_41" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="39.28"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_103" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="42.745"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_37" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="19.6"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="3_3" class="Allele">
+<attribute name="name" value="DUSP6"/>
+<attribute name="primaryIdentifier" value="M00000016"/>
+<attribute name="symbol" value="M00000016"/>
+<reference name="backgroundStrain" ref_id="3_4"/>
+<reference name="gene" ref_id="6_2"/>
+<reference name="organism" ref_id="4_1"/>
+<reference name="sequenceOntologyTerm" ref_id="5_1"/>
+<collection name="dataSets"><reference ref_id="2_1"/></collection>
+</item>
+<item id="8_63" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="84"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="1_1" class="DataSource">
+<attribute name="name" value="G2C"/>
+</item>
+<item id="8_69" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="8.88297619047619"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="7_10" class="Subject">
+<attribute name="dob" value="2006-10-02"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="-/-"/>
+<attribute name="sex" value="M"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_35" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="7.48"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_147" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="-5.41"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_46" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="1302"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_106" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="1275.13"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_113" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="31.7758333333333"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_36" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="2901.47"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_72" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="14.23"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_47" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="4.53"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_127" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="26.6"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="3_4" class="Allele">
+<attribute name="primaryIdentifier" value="C57BL/6J"/>
+<attribute name="symbol" value="C57BL/6J"/>
+<reference name="organism" ref_id="4_1"/>
+<reference name="sequenceOntologyTerm" ref_id="5_1"/>
+<collection name="dataSets"><reference ref_id="2_1"/></collection>
+</item>
+<item id="7_1" class="Subject">
+<attribute name="dob" value="d_o_b"/>
+<attribute name="doc" value="d_o_c"/>
+<attribute name="genotype" value="conf_genotype"/>
+<attribute name="sex" value="sex"/>
+<reference name="strain" ref_id="3_1"/>
+</item>
+<item id="8_61" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="407.29"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_15" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="FC_CU_tone"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_129" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="13.317619047619"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_125" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="7.22"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
 <item id="5_1" class="SOTerm">
+<attribute name="name" value="allele"/>
+<reference name="ontology" ref_id="0_1"/>
+<collection name="dataSets"><reference ref_id="2_1"/></collection>
+</item>
+<item id="7_2" class="Subject">
+<attribute name="dob" value="2006-11-08"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="+/+"/>
+<attribute name="sex" value="M"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_53" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="58.9275"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_119" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="-28.57"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_30" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="18.9125"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_68" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="9.75083333333333"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_89" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="-50.89"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_27" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="9.16999999999999"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_7" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="NOE_5_inner_avidity"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_31" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="1357.02"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_57" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="-40.24"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_49" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="48"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_141" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="1053.9"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_143" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="28.5533333333333"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_122" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="5"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_130" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="-53.41"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_9"/>
+</item>
+<item id="8_145" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="33.765"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_86" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="22.33"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_4" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="EPM_5_central_duration"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_96" class="Behaviour">
+<attribute name="name" value="NOE_5_inner_avidity"/>
+<attribute name="score" value="2304.93"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="6_2" class="Gene">
+<attribute name="symbol" value="M00000016"/>
+<reference name="organism" ref_id="4_1"/>
+<reference name="sequenceOntologyTerm" ref_id="5_2"/>
+<collection name="dataSets"><reference ref_id="2_1"/></collection>
+</item>
+<item id="8_120" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="12.785"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="0_1" class="Ontology">
+<attribute name="name" value="Sequence Ontology"/>
+<attribute name="url" value="http://www.sequenceontology.org"/>
+</item>
+<item id="8_112" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="58.2"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_62" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="4.61"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_5"/>
+</item>
+<item id="8_102" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="26.38"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_117" class="Behaviour">
+<attribute name="name" value="FC_CT_session"/>
+<attribute name="score" value="-14.04"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_146" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial.tone"/>
+<attribute name="score" value="33.03"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_10"/>
+</item>
+<item id="8_115" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="26.7216666666666"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="2_1" class="DataSet">
+<attribute name="name" value="G2C data set"/>
+<reference name="dataSource" ref_id="1_1"/>
+</item>
+<item id="8_34" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="68.4"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_88" class="Behaviour">
+<attribute name="name" value="FC_CT_session.bin"/>
+<attribute name="score" value="48.555"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="5_2" class="SOTerm">
 <attribute name="name" value="gene"/>
 <reference name="ontology" ref_id="0_1"/>
 <collection name="dataSets"><reference ref_id="2_1"/></collection>
 </item>
-<item id="7_1" class="OrthologueEvidenceCode">
-<attribute name="abbreviation" value="AA"/>
-<attribute name="name" value="Amino acid sequence comparison"/>
+<item id="8_54" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="4.07428571428572"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
 </item>
-<item id="8_1" class="OrthologueEvidence">
-<reference name="evidenceCode" ref_id="7_1"/>
+<item id="7_4" class="Subject">
+<attribute name="dob" value="2006-06-20"/>
+<attribute name="doc" value="2006-10-20"/>
+<attribute name="genotype" value="-/-"/>
+<attribute name="sex" value="M"/>
+<reference name="strain" ref_id="3_3"/>
+</item>
+<item id="8_90" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="61.77"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_1" class="Behaviour">
+<attribute name="name" value="EPM_5_dist_max"/>
+<attribute name="score" value="EPM_5_dist_total"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_40" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="9.04583333333332"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_25" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="-21.1808333333334"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_38" class="Behaviour">
+<attribute name="name" value="RR_learning"/>
+<attribute name="score" value="37.5666666666667"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_100" class="Behaviour">
+<attribute name="name" value="FC_AQ_trial"/>
+<attribute name="score" value="-68.1491666666667"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_17" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="4.53"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_110" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="7.12"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_80" class="Behaviour">
+<attribute name="name" value="NOE_5_dist_total"/>
+<attribute name="score" value="9.6"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_99" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="9.80095238095238"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
+</item>
+<item id="8_32" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="4.53"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_3"/>
+</item>
+<item id="8_82" class="Behaviour">
+<attribute name="name" value="RR_naive"/>
+<attribute name="score" value="65.4"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_108" class="Behaviour">
+<attribute name="name" value="EPM_5_central_duration"/>
+<attribute name="score" value="19"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_8"/>
+</item>
+<item id="8_59" class="Behaviour">
+<attribute name="name" value="FC_CU_tone"/>
+<attribute name="score" value="-8.93"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_4"/>
+</item>
+<item id="8_77" class="Behaviour">
+<attribute name="name" value="EPM_5_percent_time_in_open"/>
+<attribute name="score" value="5.53"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_6"/>
+</item>
+<item id="8_9" class="Behaviour">
+<attribute name="name" value="RR_memory"/>
+<attribute name="score" value="RR_learning"/>
+<reference name="strain" ref_id="3_1"/>
+<reference name="subject" ref_id="7_1"/>
+</item>
+<item id="8_19" class="Behaviour">
+<attribute name="name" value="OF_5_dist_max"/>
+<attribute name="score" value="47.6"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_2"/>
+</item>
+<item id="8_105" class="Behaviour">
+<attribute name="name" value="FC_CU_bin"/>
+<attribute name="score" value="7.2025"/>
+<reference name="strain" ref_id="3_3"/>
+<reference name="subject" ref_id="7_7"/>
 </item>
 </items>
