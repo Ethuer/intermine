@@ -13,7 +13,6 @@ package org.intermine.bio.dataconversion;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.StringReader;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Set;
 
@@ -28,16 +27,16 @@ import org.intermine.model.fulldata.Item;
  * @author IM
  *
  */
-public class TreefamConverterTest extends ItemsTestCase
+public class G2CGenesConverterTest extends ItemsTestCase
 {
-    private TreefamConverter converter;
+    private G2cGenesConverter converter;
     private MockItemWriter itemWriter;
 
     /**
      * Constructor
      * @param arg argument
      */
-    public TreefamConverterTest(String arg) {
+    public G2CGenesConverterTest(String arg) {
         super(arg);
     }
 
@@ -45,11 +44,7 @@ public class TreefamConverterTest extends ItemsTestCase
     public void setUp() throws Exception {
 
         itemWriter = new MockItemWriter(new HashMap<String, Item>());
-        converter = new TreefamConverter(itemWriter, Model.getInstanceByName("genomic"));
-        converter.rslv = IdResolverService.getMockIdResolver("Gene");
-        converter.rslv.addResolverEntry("7227", "FBgn001", Collections.singleton("CG1111"));
-        converter.rslv.addResolverEntry("7227", "FBgn002", Collections.singleton("CG2222"));
-
+        converter = new G2cGenesConverter(itemWriter, Model.getInstanceByName("genomic"));
         super.setUp();
     }
 
@@ -58,25 +53,15 @@ public class TreefamConverterTest extends ItemsTestCase
      * @throws Exception e
      */
     public void testProcess() throws Exception {
-
-        File genes = File.createTempFile("genes", "");
-        FileOutputStream out = new FileOutputStream(genes);
-        IOUtils.copy(getClass().getClassLoader().getResourceAsStream("genes.txt.table"), out);
-        out.close();
-
         ClassLoader loader = getClass().getClassLoader();
-        String input = IOUtils.toString(loader.getResourceAsStream("ortholog.txt.table"));
-
-        converter.setTreefamOrganisms("7227");
-        converter.setTreefamHomologues("9606");
-        converter.setGeneFile(genes);
+        String input = IOUtils.toString(loader.getResourceAsStream("DataToIntermine.tsv"));
         converter.process(new StringReader(input));
         converter.close();
 
         // uncomment to write out a new target items file
-        //writeItemsFile(itemWriter.getItems(), "treefam-tgt-items.xml");
+        writeItemsFile(itemWriter.getItems(), "g2c-tgt-items.xml");
 
-        Set<org.intermine.xml.full.Item> expected = readItemSet("TreefamConverterTest_tgt.xml");
+        Set<org.intermine.xml.full.Item> expected = readItemSet("G2CGenesConverterTest_tgt.xml");
 
         assertEquals(expected, itemWriter.getItems());
     }

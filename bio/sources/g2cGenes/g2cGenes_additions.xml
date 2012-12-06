@@ -14,9 +14,12 @@
     <attribute name="name" type="java.lang.String"/>
     <attribute name="score" type="java.lang.String"/>
     <reference name="strain" referenced-type="Allele" reverse-reference="behaviours"/>
+    <reference name="subject" referenced-type="Subject" reverse-reference="behaviours"/>
   </class>
   <class name="Allele" is-interface="true">
+    <reference name="backgroundStrain" referenced-type="Allele" reverse-reference="strain"/>
     <reference name="gene" referenced-type="Gene" reverse-reference="alleles"/>
+    <collection name="behaviours" referenced-type="Behaviour" reverse-reference="strains"/>
   </class>
   <class name="Gene" is-interface="true">
     <collection name="alleles" referenced-type="Allele" reverse-reference="gene"/>
