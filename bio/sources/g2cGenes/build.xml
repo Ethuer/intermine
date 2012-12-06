@@ -1,0 +1,5 @@
+<project name="g2cGenes" default="default" basedir=".">
+  <description>build, test, package g2cGenes</description>
+  
+  <import file="../../../imbuild/source.xml"/>
+</project>

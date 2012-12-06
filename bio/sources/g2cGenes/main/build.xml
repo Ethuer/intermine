@@ -1,0 +1,4 @@
+<project name="g2cGenes-tasks" default="default" basedir=".">
+  <description>build g2cGenes tasks</description>
+  <import file="../../../../imbuild/library.xml"/> 
+</project>

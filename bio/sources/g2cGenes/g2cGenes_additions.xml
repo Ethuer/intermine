@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<classes>
+  <class name="Subject" is-interface="true">
+    <attribute name="identifier" type="java.lang.String"/>
+    <attribute name="sex" type="java.lang.String"/>
+    <attribute name="dob" type="java.lang.String"/>
+    <attribute name="doc" type="java.lang.String"/>
+    <attribute name="genotype" type="java.lang.String"/>
+    <reference name="strain" referenced-type="Allele" reverse-reference="subjects"/>
+    <collection name="behaviours" referenced-type="Behaviour" reverse-reference="subjects"/>
+  </class>
+  <class name="Behaviour" is-interface="true">
+    <attribute name="name" type="java.lang.String"/>
+    <attribute name="score" type="java.lang.String"/>
+    <reference name="strain" referenced-type="Allele" reverse-reference="behaviours"/>
+  </class>
+  <class name="Allele" is-interface="true">
+    <reference name="gene" referenced-type="Gene" reverse-reference="alleles"/>
+  </class>
+  <class name="Gene" is-interface="true">
+    <collection name="alleles" referenced-type="Allele" reverse-reference="gene"/>
+  </class>
+</classes>
