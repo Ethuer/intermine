@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This file details any extensions needed to the data model to store data from this source, everything else is automatically generated from the model description so this is all we need to do to add to the model. -->
+
+
+<classes>
+  <class name="annotation>" is-interface="true">
+    <attribute name="QueryId" type="java.lang.String"/>
+    <collection name="features"  referenced-type="NewFeature" reverse-reference="annotations"/>
+  </class>
+ <!-- <class name="NewFeature" extends="Protein" is-interface="true">
+    <attribute name="identifier" type="java.lang.String"/>
+    <attribute name="confidence" type="java.lang.Double"/>
+    <reference name="annotations" referenced-type="annotation" reverse-reference="features"/>
+  </class> -->
+</classes>
+

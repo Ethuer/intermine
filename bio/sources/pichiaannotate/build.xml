@@ -1,0 +1,5 @@
+<project name="pichiaannotate" default="default" basedir=".">
+  <description>build, test, package pichiaannotate</description>
+  
+  <import file="../../../imbuild/source.xml"/>
+</project>

@@ -1,0 +1,4 @@
+<project name="mysource-tasks" default="default" basedir=".">
+  <description>build mysource tasks</description>
+  <import file="../../../../imbuild/library.xml"/> 
+</project>

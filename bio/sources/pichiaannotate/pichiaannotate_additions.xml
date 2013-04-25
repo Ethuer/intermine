@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- This file details any extensions needed to the data model to store data from this source, everything else is automatically generated from the model description so this is all we need to do to add to the model. -->
+
+<classes>
+<!-- add any <class> elements here -->
+	<class name="NewFeature">
+    		
+	</class>
+	<class name="annotation" extends="SequenceFeature" is-interface="true">
+	    <reference name="protein" referenced-type="Protein" />
+	    <attribute name ="QueryId" type="java.lang.String"/>
+ 	    <attribute name ="Qlenght" type="java.lang.String"/>
+ 	    <attribute name ="HitEvalue" type="java.lang.String"/>
+	    <attribute name ="Hitscore" type="java.lang.String"/>
+ 	    <attribute name ="HitDesc" type="java.lang.String"/>
+	</class>
+
+	
+</classes>
