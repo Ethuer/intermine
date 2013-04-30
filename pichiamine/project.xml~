@@ -6,23 +6,23 @@
   <property name="default.intermine.properties.file" location="../default.intermine.integrate.properties"/>
   <sources>
 
-<!--
-      <source name="pichia-gff" type="gff3">
+
+      <source name="pichia-gff" type="pichiagff">
       <property name="gff3.taxonId" value="123"/>
       <property name="gff3.seqDataSourceName" value="GENT"/>
       <property name="gff3.dataSourceName" value="GENT"/>
       <property name="gff3.seqClsName" value="Chromosome"/>
       <property name="gff3.dataSetTitle" value="Pichia Pastoris Genome"/>
-      <property name="src.data.dir" location="/home/ernest/pichia/genome/gff"/>
+      <property name="src.data.dir" location="/home/ernest/pichia/gff"/>
     </source>
--->
+
 
       <source name="pichia-chromosome-fasta" type="fasta" dump="true">
       <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
       <property name="fasta.dataSourceName" value="Ghent"/>
       <property name="fasta.dataSetTitle" value="Ghent"/>
       <property name="fasta.taxonId" value="7227"/>
-      <property name="fasta.includes" value="*.fasta"/>
+      <property name="fasta.includes" value="*.fa"/>
       <property name="src.data.dir" location="/home/ernest/pichia/genome/fasta"/>
     </source>
 
@@ -36,10 +36,44 @@
       <property name="pichiaannotate.HitDesc" value="PiPa"/>   
     </source>
 
+      <source name="uniprot-fasta" type="fasta">
+      <property name="fasta.taxonId" value="7227 9606"/>
+      <property name="fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="fasta.classAttribute" value="primaryAccession"/>
+      <property name="fasta.dataSetTitle" value="UniProt data set"/>
+      <property name="fasta.dataSourceName" value="UniProt"/>
+      <property name="src.data.dir" location="/home/ernest/pichia/protein-fasta"/>
+      <property name="fasta.includes" value="*.fasta"/>
+      <property name="fasta.sequenceType" value="protein" />
+      <property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>
+</source>
+	
+      <source name="pichiafunction1009" type="pichiafunction">
+      <property name="src.data.dir" location="/home/ernest/pichia/function"/>
+      <property name="pichiafunction.ProteinId" value="PiPa"/>
+      <property name="pichiafunction.NCBIProteinId" value="java.lang.Integer"/>
+      <property name="pichiafunction.NCBILocustag" value="PiPa"/>
+      <property name="pichiafunction.Manualannotation" value="Integer"/>
+      <property name="pichiafunction.GOId" value="PiPa"/> 
+      <property name="pichiafunction.SacerID" value="PiPa"/>
+      <property name="pichiafunction.SacerSTDID" value="PiPa"/>
+      <property name="pichiafunction.Sacerfunction" value="PiPa"/> 
+      <property name="pichiafunction.Uniprotdescription" value="PiPa"/>   
+
+
+
+    </source>
 
   </sources>
 
   <post-processing>
+
+    <post-process name="create-references" />
+     <!--<post-process name="transfer-sequences"/>
+    <post-process name="create-overlap-view" /> -->
+    <post-process name="create-autocomplete-index"/>
+    <post-process name="create-search-index"/>
+
   </post-processing>
 
 </project>

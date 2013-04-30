@@ -68,7 +68,7 @@ public class PichiaannotateConverter extends BioFileConverter
 
 			if (anId == null)  // Cellbank custom file column 0 (=1st) 
 				{
-				Item annotation = createItem("annotation");  
+				Item annotation = createItem("Annotation");  
  					annotation.setAttribute("QueryId",line[0]);
 					annotation.setAttribute("Qlenght",line[1]);
 					annotation.setAttribute("HitEvalue",line[2]);

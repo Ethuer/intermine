@@ -3,17 +3,15 @@
 
 <classes>
 <!-- add any <class> elements here -->
-	<class name="NewFeature">
-    		
-	</class>
-	<class name="annotation" extends="SequenceFeature" is-interface="true">
-	    <reference name="protein" referenced-type="Protein" reverse-reference="features"/>
+	
+	<class name="Annotation" extends="SequenceFeature" is-interface="true">
+	    <reference name="Annotation" referenced-type="Annotation" />
+	    <!-- <collection name="Annotation"  > -->
 	    <attribute name ="QueryId" type="java.lang.String"/>
  	    <attribute name ="Qlenght" type="java.lang.String"/>
  	    <attribute name ="HitEvalue" type="java.lang.String"/>
 	    <attribute name ="Hitscore" type="java.lang.String"/>
  	    <attribute name ="HitDesc" type="java.lang.String"/>
-	    <reference name="annotation" referenced-type="Protein" reverse-reference="features"/>
 	</class>
 
 	

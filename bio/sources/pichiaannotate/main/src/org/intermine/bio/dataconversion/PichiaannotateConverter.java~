@@ -43,8 +43,6 @@ public class PichiaannotateConverter extends BioFileConverter
     private static final String DATA_SOURCE_NAME = "pichiaannotate1007";
 	private Map<String, Item>annotations= new HashMap<String, Item>();	//add parameters
 
-
-
  	public PichiaannotateConverter(ItemWriter writer, Model model) {
         super(writer, model, DATA_SOURCE_NAME, DATASET_TITLE);
     }
