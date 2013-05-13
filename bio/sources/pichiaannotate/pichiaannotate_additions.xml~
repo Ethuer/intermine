@@ -4,15 +4,41 @@
 <classes>
 <!-- add any <class> elements here -->
 	
-	<class name="Annotation" extends="SequenceFeature" is-interface="true">
-	    <reference name="Annotation" referenced-type="Annotation" />
+	<class name="Annotation" is-interface="true"> <!-- extends="SequenceFeature"-->
+
 	    <!-- <collection name="Annotation"  > -->
-	    <attribute name ="QueryId" type="java.lang.String"/>
- 	    <attribute name ="Qlenght" type="java.lang.String"/>
+	    <!--<attribute name ="primaryIdentifier" type="java.lang.String"/> -->
+	    <attribute name ="DatabaseID" type="java.lang.String"/> -->
+ 	    <attribute name ="Qlenght" type="java.lang.String"/> 
  	    <attribute name ="HitEvalue" type="java.lang.String"/>
 	    <attribute name ="Hitscore" type="java.lang.String"/>
  	    <attribute name ="HitDesc" type="java.lang.String"/>
+	    <reference name ="function" referenced-type="Function" />-->
+
+	    <!--<collection name="function" referenced-type="Function" /> reverse-reference="annotation"-->
 	</class>
 
+
+<!-- add any <class> elements here 
+-->
+        <class name="Function" is-interface="true">  <!-- extends="BioEntity" -->
+	    <!--  reverse-reference="Annotation" -->
+	    <!-- <collection name="Annotation"  > -->
+	    <attribute name ="ProteinID" type="java.lang.String"/>-->
+	    <!--<attribute name ="primaryIdentifier" type="java.lang.String"/> -->
+ 	    <attribute name ="NCBIProteinId" type="java.lang.String"/>
+ 	    <attribute name ="FunctionID" type="java.lang.String"/>-->
+	    <attribute name ="Manualannotation" type="java.lang.String"/>
+            <attribute name ="GOId" type="java.lang.String"/>
+	    <attribute name ="SacerID" type="java.lang.String"/>
+ 	    <attribute name ="SacerSTDID" type="java.lang.String"/>
+ 	    <attribute name ="Sacerfunction" type="java.lang.String"/>
+	    <attribute name ="Uniprotdescription" type="java.lang.String"/> 
+	    <!--<attribute name ="DatabaseID" type="java.lang.String"/> -->
+            <!--<reference name="DatabaseID" referenced-type="Annotation" />-->
+	    
+	</class>
 	
+
 </classes>
+

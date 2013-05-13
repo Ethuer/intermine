@@ -1,16 +1,24 @@
 <?xml version="1.0"?>
 <!-- This file details any extensions needed to the data model to store data from this source, everything else is automatically generated from the model description so this is all we need to do to add to the model. -->
 
-
 <classes>
-  <class name="annotation>" is-interface="true">
-    <attribute name="QueryId" type="java.lang.String"/>
-    <collection name="features"  referenced-type="NewFeature" reverse-reference="annotations"/>
-  </class>
- <!-- <class name="NewFeature" extends="Protein" is-interface="true">
-    <attribute name="identifier" type="java.lang.String"/>
-    <attribute name="confidence" type="java.lang.Double"/>
-    <reference name="annotations" referenced-type="annotation" reverse-reference="features"/>
-  </class> -->
+<!-- add any <class> elements here -->
+	
+	<class name="Annotation" is-interface="true"> <!-- extends="SequenceFeature"-->
+	    <!-- <collection name="Annotation"  > -->
+	    <attribute name ="QueryId" type="java.lang.String"/>
+ 	    <attribute name ="Qlenght" type="java.lang.String"/>
+	    <collection name="description"  reference-type="Description" />
+	    <!--<reference name="function" reference-type="Function" reverse-reference="annotate"/> -->
+	</class>
+	<class name="Description" is-interface="true">
+ 	    <attribute name ="HitEvalue" type="java.lang.String"/>
+	    <attribute name ="Hitscore" type="java.lang.String"/>
+ 	    <attribute name ="HitDesc" type="java.lang.String"/>
+	    <collection name="annotation" referenced-type="Function"/>
+	</class>
+	<!--<class name="Function" is-interface="true">  
+	    <attribute name ="NCBILocustag" type="java.lang.String"/>
+	    <reference name="annotate" reference-type="Annotation" reverse-reference="function"/>
+	</class> -->
 </classes>
-

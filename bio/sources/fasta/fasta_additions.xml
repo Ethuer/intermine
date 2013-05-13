@@ -1,3 +1,4 @@
-<?xml version="1.0"?>
 <classes>
+<class name="Gene" extends="Gene" is-interface="true"></class>
+
 </classes>

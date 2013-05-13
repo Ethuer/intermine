@@ -26,15 +26,15 @@
       <property name="src.data.dir" location="/home/ernest/pichia/genome/fasta"/>
     </source>
 
-
+-->
       <source name="pichiaannotate1007" type="pichiaannotate">
       <property name="src.data.dir" location="/home/ernest/pichia/annotations/"/>
-      <property name="pichiaannotate.QueryId" value="PiPa"/>
-      <property name="pichiaannotate.Qlenght" value="java.lang.Integer"/>
-      <property name="pichiaannotate.HitEvalue" value="PiPa"/>
-      <property name="pichiaannotate.Hitscore" value="Integer"/>
-      <property name="pichiaannotate.HitDesc" value="PiPa"/>   
+      <property name="pichiaannotate.className" value="org.intermine.model.bio.Annotation"/>
+      <property name="pichiaannotate.dataSourceName" value="PiPa_annotate_1007"/>
     </source>
+
+	
+
 
       <source name="uniprot-fasta" type="fasta">
       <property name="fasta.taxonId" value="7227 9606"/>
@@ -47,29 +47,47 @@
       <property name="fasta.sequenceType" value="protein" />
       <property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>
     </source>
-	
+-->
       <source name="pichiafunction1009" type="pichiafunction">
       <property name="src.data.dir" location="/home/ernest/pichia/function"/>
-      <property name="pichiafunction.ProteinId" value="PiPa"/>
-      <property name="pichiafunction.NCBIProteinId" value="java.lang.Integer"/>
-      <property name="pichiafunction.NCBILocustag" value="PiPa"/>
-      <property name="pichiafunction.Manualannotation" value="Integer"/>
-      <property name="pichiafunction.GOId" value="PiPa"/> 
-      <property name="pichiafunction.SacerID" value="PiPa"/>
-      <property name="pichiafunction.SacerSTDID" value="PiPa"/>
-      <property name="pichiafunction.Sacerfunction" value="PiPa"/> 
-      <property name="pichiafunction.Uniprotdescription" value="PiPa"/>   
+      <property name="pichiafunction.className" value="org.intermine.model.bio.Annotation"/>
+      <property name="pichiafunction.dataSourceName" value="PiPa_function_1009"/>
     </source>
 
+
+
+
+      <source name="Saccharomyceshomology" type="schomologs">
+      <property name="src.data.dir" location="/home/ernest/pichia/Homologs"/>
+      <property name="schomologs.className" value="org.intermine.model.bio.Annotation"/>
+      <property name="schomologs.dataSourceName" value="PiPa_function_1009"/>
+    </source>
+-->
+
+<!--
+	<item id="3_1" class="Annotation">
+	<attribute name="key_primaryidentifier" value="Pipas_c034_0002" />
+    </item>
+	
+
+	<item id="3_2" class="Function">
+	<attribute name="key_primaryidentifier" value="PiPa" />
+	<reference name="function" ref_id="3_1"/>
+    </item>
+-->
   </sources>
 
   <post-processing>
+	
 
+    <post-process name="do-sources"/>
     <post-process name="create-references" />
-     <!--<post-process name="transfer-sequences"/>
+    <!--<post-process name="transfer-sequences"/> 
     <post-process name="create-overlap-view" /> -->
     <post-process name="create-autocomplete-index"/>
     <post-process name="create-search-index"/>
+    <post-process name="summarise-objectstore"/>
+    <post-process name="create-attribute-indexes"/> --><!-- has to be the last post processing step -->
 
   </post-processing>
 

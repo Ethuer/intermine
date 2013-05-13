@@ -42,9 +42,11 @@ public class PichiaannotateConverter extends BioFileConverter
     private static final String DATASET_TITLE = "pichia annotate";
     private static final String DATA_SOURCE_NAME = "pichiaannotate1007";
 	private Map<String, Item>annotations= new HashMap<String, Item>();	//add parameters
+	private Map<String, String>parents = new HashMap<String,String>();	//add parents aka reference links
 
  	public PichiaannotateConverter(ItemWriter writer, Model model) {
         super(writer, model, DATA_SOURCE_NAME, DATASET_TITLE);
+	parents.put("DatabaseID", "function");
     }
 
     /**
@@ -62,14 +64,20 @@ public class PichiaannotateConverter extends BioFileConverter
 		while (lineIter.hasNext())
 		{
 			String[] line = (String[]) lineIter.next();
+			
+			//Item parent = createItem("annotation")
 
-
-			Item anId =annotations.get(line[0]);
+			Item anId = annotations.get(line[0]);
 
 			if (anId == null)  // Cellbank custom file column 0 (=1st) 
 				{
-				Item annotation = createItem("Annotation");  
- 					annotation.setAttribute("QueryId",line[0]);
+				Item annotation = createItem("Annotation"); 
+					annotation.setAttribute("DatabaseID",line[0]);
+
+					//annotation.setReference("function",line[0]);
+
+					//annotation.setReference("DatabaseID",line[0]); 
+ 					//annotation.setAttribute("QueryId",line[0]);
 					annotation.setAttribute("Qlenght",line[1]);
 					annotation.setAttribute("HitEvalue",line[2]);
 					annotation.setAttribute("Hitscore",line[3]);
@@ -83,33 +91,6 @@ public class PichiaannotateConverter extends BioFileConverter
 				} 
    		}
 	}
-/*
-    public void process(Writer writer) throws Exception 
-	{
-	Iterator<?> lineIter = FormattedTextParser.parseDelimitedReader(reader,'\t'); // check delimiter
 
-		//loop through lines 
-		while (lineIter.hasNext())
-		{
-			String[] line = (String[]) lineIter.next();
-
-
-			Item anId =annotations.get(line[0]);
-			
-			if (anId == null)  // Cellbank custom file column 0 (=1st) 
-				{
-				Item annotation = createItem("Annotation");  
- 					annotation.setAttribute("QueryId",line[0]);
-					annotation.setAttribute("Qlenght",line[1]);
-					annotation.setAttribute("HitEvalue",line[2]);
-					annotation.setAttribute("Hitscore",line[3]);
-					annotation.setAttribute("HitDesc",line[4]);
-					//annotation.setReference("QueryId",line[0]);
-					store(annotation);
-
-			FileWriter fw = new FileWriter(new File(pichiaannotate1007.xml)):
-			fw.write(FullRenderer.render(items)):
-			
-*/
 }
     
